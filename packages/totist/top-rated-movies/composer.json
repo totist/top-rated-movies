@@ -1,0 +1,24 @@
+{
+    "name": "totist/top-rated-movies",
+    "description": "Retrieve top rated movies from TMDB",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Istvan Toth",
+            "email": "totist@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Totist\\TopRatedMovies\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Totist\\TopRatedMovies\\Providers\\TopRatedMoviesServiceProvider"
+            ]
+        }
+    }
+}
