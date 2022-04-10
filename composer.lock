@@ -5183,11 +5183,11 @@
         },
         {
             "name": "totist/top-rated-movies",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/totist/top-rated-movies",
-                "reference": "0273ebc0061aafde5dc8bf2c14d13bb40265d0d0"
+                "reference": "9c1df0f07519e2bcfbd5d20a0db926f324baf418"
             },
             "type": "library",
             "extra": {
@@ -5199,7 +5199,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Totist\\TopRatedMovies\\": "src/"
+                    "Totist\\TopRatedMovies\\": "src/",
+                    "Totist\\TopRatedMovies\\Database\\": "database/"
                 }
             },
             "license": [

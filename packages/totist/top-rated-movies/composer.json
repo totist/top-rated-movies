@@ -11,7 +11,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Totist\\TopRatedMovies\\": "src/"
+            "Totist\\TopRatedMovies\\": "src/",
+            "Totist\\TopRatedMovies\\Database\\": "database/"
         }
     },
     "extra": {

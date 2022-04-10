@@ -256,9 +256,7 @@ class MoviesController extends Controller
             $queries = [];
             foreach ($movieIds as $movieId) {
                 $queries[] = $pool->withToken(config('tmdb.api_key'))
-                    ->get(config('tmdb.api_url') . sprintf('/movie/%d', $movieId), [
-                        'append_to_response' => 'id,runtime',
-                    ]);
+                    ->get(config('tmdb.api_url') . sprintf('/movie/%d', $movieId));
             }
             return $queries;
         });
